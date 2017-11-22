@@ -34,7 +34,7 @@ def main():
         '--style',
         choices=PROGRESS_BARS.keys(),
         default='equals',
-        help='style used to display the progress')
+        help='style used to display the progress (default: %(default)s)')
 
     args = parser.parse_args()
     progress_bar = PROGRESS_BARS[args.style](TOTAL)
