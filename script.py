@@ -32,7 +32,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         '--style',
-        choices=['equals', 'sawtooth', 'squares'],
+        choices=PROGRESS_BARS.keys(),
         default='equals',
         help='style used to display the progress')
 
